@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNO - Contacto</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #000; /* Fallback color in case video doesn't load */
+            color: #fff; /* Default text color */
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        #video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            filter: blur(10px); /* Agrega el efecto de desenfoque */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero-text {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffc107;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            padding: 10px 0;
+            z-index: 2;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            padding: 10px 0;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TECNO</div>
+            <ul>
+                <li><a href="index1.html">Inicio</a></li>
+                <li><a href="index2.html">Productos</a></li>
+                <li><a href="index3.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="video-background">
+            <video id="video-bg" autoplay muted loop>
+                <source src="fondo.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content">
+            <div class="hero-text">
+                <h1>Contacto</h1>
+                <p>Encuentra nuestras redes sociales y forma de contacto.</p>
+                <!-- Aquí puedes agregar tu contenido específico de contacto -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+    <script src="json1.js"></script>
+</body>
+</html>

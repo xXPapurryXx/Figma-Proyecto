@@ -1,0 +1,43 @@
+/* Estilos específicos para la página de contacto (index3.html) */
+
+.contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contacto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
